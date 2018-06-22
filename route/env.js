@@ -5,7 +5,7 @@
 module.exports.env = {
     server_monitor:{
         PORT: 6012,
-        HOST: ""
+        HOST: "192.168.100.15"
     },
     server_web:{
         PORT: 8080,

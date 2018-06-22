@@ -3,6 +3,7 @@ mainApp.controller('appController', function($scope, $interval) {
     $scope.pers = 0;
     $scope.total = 0;
     $scope.free = 0;
+    $scope.app = 0;
     $interval(function(){
         getToServer('/system', 'GET', function(data){
             try{
@@ -12,7 +13,8 @@ mainApp.controller('appController', function($scope, $interval) {
                 return;
             }
             var sys = oD.system;           
-            console.log(sys)
+            console.log(oD.devi)
+            $scope.device = oD.device.real + '/' + oD.device.total;
             $scope.free = Math.round(sys.freemem/1024./10.24)/100.;
             $scope.total = Math.round(sys.totalmem/1024./10.24)/100.;
             $scope.pers = Math.round((1 - ($scope.free/$scope.total))*10000) / 100.;
