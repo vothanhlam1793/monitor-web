@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>CRENET home page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body >
+        <div class="w3-container">
+            <h1>THÔNG TIN THIẾT BỊ</h1>
+            <p>Web-monitor dùng để giải thích hoạt động diễn ra tại hệ thống server-con</p>
+        </div>
+        <div class="w3-container" ng-app="mainapp" ng-controller="appController">
+            <!-- <h4>Bảng trạng thái:</h4> -->
+            <h3>SERVER: Unknown</h5>
+            <h6>Free    : {{free}} Mb</h6>
+            <h6>Total   : {{total}} Mb</h6>
+            <h6>CPU     : {{pers}} %</h6>
+            <!-- <table class="w3-table">
+                <tr>
+                    <th>Máy chủ</th>
+                    <th>Số hiệu</th>
+                    <th>Số lượng con</th>
+                    <th>Hoạt động</th>
+                </tr>
+                <tr>
+                    <td>PC-NVR</td>
+                    <td>aaaaaaaaaaaabc</td>
+                    <td>2</td>
+                    <td>Good</td>
+                </tr>
+                <tr>
+                    <td>Dell-Composer</td>
+                    <td>b3aaaaaaaaaabc</td>
+                    <td>18</td>
+                    <td>Normal</td>
+                </tr>                
+            </table> -->
+        </div>
+        <p class="w3-display-bottomright w3-container">Devel by CRETA Comp.</p>
+    </body>
+</html>
